@@ -22,7 +22,9 @@ App({
   },
   initEnv() {
     const envVersion = __wxConfig.envVersion
-    const env = envVersion === 'develop' ? 'pwd-dev' : 'pwd-prod' // ['develop', 'trial', 'release']
+    // const env = envVersion === 'develop' ? 'pwd-dev' : 'pwd-prod' // ['develop', 'trial', 'release']
+    const env = envVersion === 'develop' ? 'cloud1-5gwy99gy4118271d' : 'cloud1-5gwy99gy4118271d' // ['develop', 'trial', 'release']
+
     wx.cloud.init({ env, traceUser: true })
     this.globalData.env = env
   },
